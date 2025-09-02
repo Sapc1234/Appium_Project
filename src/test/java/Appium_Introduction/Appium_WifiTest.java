@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import Appium_PreSteps.BaseTest;
 import io.appium.java_client.AppiumBy;
 
-public class Appium_BasicsWifi extends BaseTest
+public class Appium_WifiTest extends BaseTest
 
 {
 	@Test
@@ -29,6 +29,5 @@ public class Appium_BasicsWifi extends BaseTest
 
 		driver.findElement(By.id("android:id/edit")).sendKeys("Sharan wifi");
 		driver.findElements(AppiumBy.className("android.widget.Button")).get(1).click();
-
 	}
 }
