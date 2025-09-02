@@ -16,7 +16,7 @@ public class LongPress extends BaseTest
 {
 	@Test
 
-	public void longPess_Gesture() throws MalformedURLException, URISyntaxException, InterruptedException
+	public void longPress_Gesture() throws MalformedURLException, URISyntaxException, InterruptedException
 
 	{
 		driver.findElement(AppiumBy.accessibilityId("Views")).click();
