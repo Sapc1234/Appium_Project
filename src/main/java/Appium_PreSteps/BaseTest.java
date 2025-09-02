@@ -33,13 +33,7 @@ public class BaseTest
 
 	{
 
-		// AndroidDriver ,IosDriver
-		// Appium code is sent to the Appium server, which interprets the commands and
-		// forwards them to the mobile device for execution."
-		// Once you send the code next step is need to share capabilities
-		// writing code for,to start the server (Basically, the main.js file triggers
-		// the Appium server startup.)
-		// Java V20 ->URL officially deprecated use URI then convert to URL
+		
 
 		// Run Appium server automatically
 
