@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeClass;
 
 import com.google.common.collect.ImmutableMap;
 
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -32,8 +33,6 @@ public class BaseTest
 	public void configureAppium() throws MalformedURLException, URISyntaxException
 
 	{
-
-		
 
 		// Run Appium server automatically
 
@@ -76,6 +75,26 @@ public class BaseTest
 	{
 		((JavascriptExecutor) driver).executeScript("mobile: longClickGesture",
 				ImmutableMap.of("elementId", ((RemoteWebElement) ele).getId(), "duration", 2000));
+	}
+
+	public static void scrollToEndAction()
+
+	{
+		boolean canScrollMore;
+		do
+
+		{
+			canScrollMore = (Boolean) ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture", ImmutableMap
+					.of("left", 100, "top", 100, "width", 200, "height", 200, "direction", "down", "percent", 3.0));
+
+		} while (canScrollMore);
+	}
+
+	public static void scrollToSpecificText()
+
+	{
+		driver.findElement(
+				AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"WebView\"));"));
 	}
 
 	@AfterClass
