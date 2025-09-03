@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-02T23:21:29 IST" name="Default suite" finished-at="2025-09-02T23:21:45 IST" duration-ms="15808">
+  <suite started-at="2025-09-03T18:32:51 IST" name="Default suite" finished-at="2025-09-03T18:33:25 IST" duration-ms="34171">
     <groups>
     </groups>
-    <test started-at="2025-09-02T23:21:29 IST" name="Default test" finished-at="2025-09-02T23:21:45 IST" duration-ms="15808">
-      <class name="Appium_Introduction.ScrollDemo">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:Appium_Introduction.ScrollDemo@38425407]" started-at="2025-09-02T23:21:29 IST" name="configureAppium" finished-at="2025-09-02T23:21:37 IST" duration-ms="7745" status="PASS">
+    <test started-at="2025-09-03T18:32:51 IST" name="Default test" finished-at="2025-09-03T18:33:25 IST" duration-ms="34171">
+      <class name="Appium_Introduction.DragAndDropDemo">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:Appium_Introduction.DragAndDropDemo@3c41ed1d]" started-at="2025-09-03T18:32:51 IST" name="configureAppium" finished-at="2025-09-03T18:33:19 IST" duration-ms="27716" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method signature="scrollDemoTest()[pri:0, instance:Appium_Introduction.ScrollDemo@38425407]" started-at="2025-09-02T23:21:37 IST" name="scrollDemoTest" finished-at="2025-09-02T23:21:44 IST" duration-ms="7290" status="PASS">
+        <test-method signature="dragAndDropDemoTest()[pri:0, instance:Appium_Introduction.DragAndDropDemo@3c41ed1d]" started-at="2025-09-03T18:33:19 IST" name="dragAndDropDemoTest" finished-at="2025-09-03T18:33:24 IST" duration-ms="5324" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- scrollDemoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Appium_Introduction.ScrollDemo@38425407]" started-at="2025-09-02T23:21:45 IST" name="tearDown" finished-at="2025-09-02T23:21:45 IST" duration-ms="716" status="PASS">
+        </test-method> <!-- dragAndDropDemoTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Appium_Introduction.DragAndDropDemo@3c41ed1d]" started-at="2025-09-03T18:33:24 IST" name="tearDown" finished-at="2025-09-03T18:33:25 IST" duration-ms="1076" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Appium_Introduction.ScrollDemo -->
+      </class> <!-- Appium_Introduction.DragAndDropDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

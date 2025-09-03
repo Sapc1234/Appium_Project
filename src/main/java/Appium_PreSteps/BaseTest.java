@@ -97,6 +97,22 @@ public class BaseTest
 				AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"WebView\"));"));
 	}
 
+	public static void swipeAction(WebElement ele, String direction)
+
+	{
+		// Swipe
+		((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of("elementId",
+				((RemoteWebElement) ele).getId(), "direction", direction.toLowerCase(), "percent", 0.75));
+
+	}
+	
+	public static void dragAndDropAction(WebElement ele)
+	
+	{
+		((JavascriptExecutor) driver).executeScript("mobile: dragGesture",
+				ImmutableMap.of("elementId", ((RemoteWebElement) ele).getId(), "endX", 648, "endY", 576));
+	}
+
 	@AfterClass
 	public void tearDown()
 
