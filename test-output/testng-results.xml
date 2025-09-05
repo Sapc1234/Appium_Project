@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-03T18:32:51 IST" name="Default suite" finished-at="2025-09-03T18:33:25 IST" duration-ms="34171">
+  <suite started-at="2025-09-05T16:43:20 IST" name="Default suite" finished-at="2025-09-05T16:43:49 IST" duration-ms="29124">
     <groups>
     </groups>
-    <test started-at="2025-09-03T18:32:51 IST" name="Default test" finished-at="2025-09-03T18:33:25 IST" duration-ms="34171">
-      <class name="Appium_Introduction.DragAndDropDemo">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:Appium_Introduction.DragAndDropDemo@3c41ed1d]" started-at="2025-09-03T18:32:51 IST" name="configureAppium" finished-at="2025-09-03T18:33:19 IST" duration-ms="27716" status="PASS">
+    <test started-at="2025-09-05T16:43:20 IST" name="Default test" finished-at="2025-09-05T16:43:49 IST" duration-ms="29124">
+      <class name="Appium_Introduction.E2E_AppTest">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:Appium_Introduction.E2E_AppTest@43bc63a3]" started-at="2025-09-05T16:43:20 IST" name="configureAppium" finished-at="2025-09-05T16:43:30 IST" duration-ms="10206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method signature="dragAndDropDemoTest()[pri:0, instance:Appium_Introduction.DragAndDropDemo@3c41ed1d]" started-at="2025-09-03T18:33:19 IST" name="dragAndDropDemoTest" finished-at="2025-09-03T18:33:24 IST" duration-ms="5324" status="PASS">
+        <test-method signature="app_Test()[pri:0, instance:Appium_Introduction.E2E_AppTest@43bc63a3]" started-at="2025-09-05T16:43:30 IST" name="app_Test" finished-at="2025-09-05T16:43:48 IST" duration-ms="17816" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dragAndDropDemoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Appium_Introduction.DragAndDropDemo@3c41ed1d]" started-at="2025-09-03T18:33:24 IST" name="tearDown" finished-at="2025-09-03T18:33:25 IST" duration-ms="1076" status="PASS">
+        </test-method> <!-- app_Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Appium_Introduction.E2E_AppTest@43bc63a3]" started-at="2025-09-05T16:43:48 IST" name="tearDown" finished-at="2025-09-05T16:43:49 IST" duration-ms="1055" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Appium_Introduction.DragAndDropDemo -->
+      </class> <!-- Appium_Introduction.E2E_AppTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -8,6 +8,8 @@ import java.time.Duration;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -105,14 +107,20 @@ public class BaseTest
 				((RemoteWebElement) ele).getId(), "direction", direction.toLowerCase(), "percent", 0.75));
 
 	}
-	
+
 	public static void dragAndDropAction(WebElement ele)
-	
+
 	{
 		((JavascriptExecutor) driver).executeScript("mobile: dragGesture",
 				ImmutableMap.of("elementId", ((RemoteWebElement) ele).getId(), "endX", 648, "endY", 576));
 	}
 
+	public static void waitForElementToAppear(WebElement byElement)
+	
+	{
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(byElement));
+	}
 	@AfterClass
 	public void tearDown()
 

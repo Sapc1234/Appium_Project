@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Appium_Introduction.Appium_WifiTest">
+      <class name="Appium_Introduction.MiscellaneousAppiumAction">
         <methods>
+          <include name="MiscellaneousTest"/>
           <include name="configureAppium"/>
           <include name="tearDown"/>
-          <include name="wifiSettingsName"/>
         </methods>
-      </class> <!-- Appium_Introduction.Appium_WifiTest -->
+      </class> <!-- Appium_Introduction.MiscellaneousAppiumAction -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
