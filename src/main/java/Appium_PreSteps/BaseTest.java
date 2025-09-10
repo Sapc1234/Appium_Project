@@ -65,7 +65,9 @@ public class BaseTest
 		// create capabilities
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("SapEmulator");
-		options.setApp(System.getProperty("user.dir") + "\\src\\main\\resources\\utils\\ApiDemos-debug.apk");
+		// options.setApp(System.getProperty("user.dir") +
+		// "\\src\\main\\resources\\utils\\ApiDemos-debug.apk");
+		options.setApp(System.getProperty("user.dir") + "\\src\\main\\resources\\utils\\General-Store.apk");
 		// create object android /Ios driver
 		driver = new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(), options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -116,11 +118,26 @@ public class BaseTest
 	}
 
 	public static void waitForElementToAppear(WebElement byElement)
-	
+
 	{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(byElement));
 	}
+
+	public static void waitForElementToAttributeContains(WebElement byElement, String txt, String Cart)
+
+	{
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.attributeContains(byElement, txt, Cart));
+	}
+
+	public static Double getFormattedAmount(String amount)
+
+	{
+		Double price = Double.parseDouble(amount.substring(1));
+		return price;
+	}
+
 	@AfterClass
 	public void tearDown()
 

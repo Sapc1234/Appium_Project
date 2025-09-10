@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-05T16:43:20 IST" name="Default suite" finished-at="2025-09-05T16:43:49 IST" duration-ms="29124">
+  <suite started-at="2025-09-10T15:30:11 IST" name="Default suite" finished-at="2025-09-10T15:31:19 IST" duration-ms="68557">
     <groups>
     </groups>
-    <test started-at="2025-09-05T16:43:20 IST" name="Default test" finished-at="2025-09-05T16:43:49 IST" duration-ms="29124">
-      <class name="Appium_Introduction.E2E_AppTest">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:Appium_Introduction.E2E_AppTest@43bc63a3]" started-at="2025-09-05T16:43:20 IST" name="configureAppium" finished-at="2025-09-05T16:43:30 IST" duration-ms="10206" status="PASS">
+    <test started-at="2025-09-10T15:30:11 IST" name="Default test" finished-at="2025-09-10T15:31:19 IST" duration-ms="68557">
+      <class name="ECommerce.Ecomm_App_Tc3">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:ECommerce.Ecomm_App_Tc3@6a6cb05c]" started-at="2025-09-10T15:30:11 IST" name="configureAppium" finished-at="2025-09-10T15:30:30 IST" duration-ms="19454" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method signature="app_Test()[pri:0, instance:Appium_Introduction.E2E_AppTest@43bc63a3]" started-at="2025-09-05T16:43:30 IST" name="app_Test" finished-at="2025-09-05T16:43:48 IST" duration-ms="17816" status="PASS">
+        <test-method signature="fillForm()[pri:0, instance:ECommerce.Ecomm_App_Tc3@6a6cb05c]" started-at="2025-09-10T15:30:30 IST" name="fillForm" finished-at="2025-09-10T15:31:18 IST" duration-ms="47938" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- app_Test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Appium_Introduction.E2E_AppTest@43bc63a3]" started-at="2025-09-05T16:43:48 IST" name="tearDown" finished-at="2025-09-05T16:43:49 IST" duration-ms="1055" status="PASS">
+        </test-method> <!-- fillForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ECommerce.Ecomm_App_Tc3@6a6cb05c]" started-at="2025-09-10T15:31:18 IST" name="tearDown" finished-at="2025-09-10T15:31:19 IST" duration-ms="1082" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Appium_Introduction.E2E_AppTest -->
+      </class> <!-- ECommerce.Ecomm_App_Tc3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
